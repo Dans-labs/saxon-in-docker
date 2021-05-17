@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  saxonb:
+    image: vicding81/saxonb:latest
+    volumes:
+      - "${xml_path}:/xml_path"
+      - "${xsl_path}:/xsl_path/transformer.xsl"
+      - "${output_path}:/output_path"
+
