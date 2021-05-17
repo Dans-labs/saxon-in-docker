@@ -3,6 +3,19 @@
 This docker setup together with `run.py` will convert the EASY social science XML to properly mapped json files for 
 Dataverse to ingest. 
 
+## Step 2 to use the setup
+### configuration in .env file
+```python
+xml_path="absolute path to the directory which contains all xml files"
+xsl_path="/absolute-path-to/to-json.xsl"
+output_path="/absolute-path-to/output_path"
+```
+ * `xml_path` should point to a local folder on the host 
+ * `xsl_path` should point to a local file on the host
+ * `output_path` should point to a local folder on the host
+
+All the 3 paths will be mounted to the container. The end result json files will be put in the `output-path` on host. 
+
 ### Start the docker container
 `docker compose up -d`
 
