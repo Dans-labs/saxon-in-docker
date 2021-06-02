@@ -51,7 +51,9 @@
         </xsl:variable>
         <xsl:variable name="subject">
             <xsl:for-each select="//emd:audience/dct:audience">
-                <xsl:call-template name="audiencefromkeyword"><xsl:with-param name="val" select="."></xsl:with-param></xsl:call-template>
+                <xsl:call-template name="audiencefromkeyword">
+                    <xsl:with-param name="val" select="."></xsl:with-param>
+                </xsl:call-template>
                 <xsl:if test="position() != last()">
                     <xsl:text>,</xsl:text>
                 </xsl:if>
@@ -59,7 +61,9 @@
         </xsl:variable>
         <xsl:variable name="subject-custom">
             <xsl:for-each select="//emd:audience/dct:audience">
-                <xsl:call-template name="audiencefromkeywordcustom"><xsl:with-param name="val" select="."></xsl:with-param></xsl:call-template>
+                <xsl:call-template name="audiencefromkeywordcustom">
+                    <xsl:with-param name="val" select="."></xsl:with-param>
+                </xsl:call-template>
                 <xsl:if test="position() != last()">
                     <xsl:text>,</xsl:text>
                 </xsl:if>
@@ -71,7 +75,8 @@
         "license": "CC0",
         "protocol": "doi",
         "authority":"<xsl:value-of select="substring-before($doi-identifier, '/')"/>",
-        "identifier":"doi:<xsl:value-of select="substring-before($doi-identifier, '/')"/>/<xsl:value-of select="substring-after($doi-identifier, '/')"/>",
+        "identifier":"doi:<xsl:value-of select="substring-before($doi-identifier, '/')"/>/<xsl:value-of
+            select="substring-after($doi-identifier, '/')"/>",
         "metadataBlocks": {
         "easy-metadata": {
         "displayName": "Electronic Archiving SYstem - DANS Custom Metadata",
@@ -170,7 +175,8 @@
             "typeName": "easy-collection",
             "multiple": false,
             "typeClass": "controlledVocabulary",
-            "value": <xsl:value-of select="$easy-collection-val"/>
+            "value":
+            <xsl:value-of select="$easy-collection-val"/>
             },
         </xsl:if>
         <xsl:if test="$subject-custom !='Other'">
@@ -213,12 +219,16 @@
             "typeName": "language",
             "multiple": true,
             "typeClass": "controlledVocabulary",
-            "value": [<xsl:for-each select="//emd:language/dc:language[@eas:scheme='ISO 639']">
-            <xsl:call-template name="languages"><xsl:with-param name="val" select="."></xsl:with-param></xsl:call-template>
-            <xsl:if test="position() != last()">
-                <xsl:text>,</xsl:text>
-            </xsl:if>
-        </xsl:for-each>]
+            "value": [
+            <xsl:for-each select="//emd:language/dc:language[@eas:scheme='ISO 639']">
+                <xsl:call-template name="languages">
+                    <xsl:with-param name="val" select="."></xsl:with-param>
+                </xsl:call-template>
+                <xsl:if test="position() != last()">
+                    <xsl:text>,</xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+            ]
             },
         </xsl:if>
         <xsl:if test="//emd:relation/eas:isReferencedBy !=''">
@@ -324,33 +334,39 @@
                 }
                 }
             </xsl:if>
-            <xsl:if test="$author!=''">
-                <xsl:if test="$author-eas != ''">,</xsl:if>
-                <xsl:for-each select="//dc:creator">
-                    <xsl:variable name="author-norm">
-                        <xsl:call-template name="string-escape-characters">
-                            <xsl:with-param name="text" select="normalize-space(.)"></xsl:with-param>
-                        </xsl:call-template>
-                    </xsl:variable>
-
-                    {
-                    "authorName": {
-                    "typeName": "authorName",
-                    "multiple": false,
-                    "value": "<xsl:value-of select="$author-norm"/>",
-                    "typeClass": "primitive"
-                    }
-                    }
-                    <xsl:if test="position() != last()">
-                        <xsl:text>,</xsl:text>
-                    </xsl:if>
-                </xsl:for-each>
-
-            </xsl:if>
+            
             <xsl:if test="position() != last()">
                 <xsl:text>,</xsl:text>
             </xsl:if>
+            <xsl:if test="position() = last()">
+                <xsl:if test="$author!=''">
+                    <xsl:text>,</xsl:text>
+                </xsl:if>
+            </xsl:if>
         </xsl:for-each>
+        <xsl:if test="$author!=''">
+            
+            <xsl:for-each select="//dc:creator">
+                <xsl:variable name="author-norm">
+                    <xsl:call-template name="string-escape-characters">
+                        <xsl:with-param name="text" select="normalize-space(.)"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:variable>
+                
+                {
+                "authorName": {
+                "typeName": "authorName",
+                "multiple": false,
+                "value": "<xsl:value-of select="$author-norm"/>",
+                "typeClass": "primitive"
+                }
+                }
+                <xsl:if test="position() != last()">
+                    <xsl:text>,</xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+            
+        </xsl:if>
         ]
         },
         {
@@ -469,17 +485,19 @@
             "typeName":"kindOfData",
             "multiple":true,
             "typeClass":"primitive",
-            "value":[<xsl:for-each select="//emd:type/dc:type">
-            <xsl:variable name="kind-norm">
-                <xsl:call-template name="string-escape-characters">
-                    <xsl:with-param name="text" select="normalize-space(.)"></xsl:with-param>
-                </xsl:call-template>
-            </xsl:variable>
-            "<xsl:value-of select="$kind-norm"/>"
-            <xsl:if test="position() != last()">
-                <xsl:text>,</xsl:text>
-            </xsl:if>
-        </xsl:for-each>]
+            "value":[
+            <xsl:for-each select="//emd:type/dc:type">
+                <xsl:variable name="kind-norm">
+                    <xsl:call-template name="string-escape-characters">
+                        <xsl:with-param name="text" select="normalize-space(.)"></xsl:with-param>
+                    </xsl:call-template>
+                </xsl:variable>
+                "<xsl:value-of select="$kind-norm"/>"
+                <xsl:if test="position() != last()">
+                    <xsl:text>,</xsl:text>
+                </xsl:if>
+            </xsl:for-each>
+            ]
             },
         </xsl:if>
         <xsl:variable name="isbn" select="//emd:identifier/dc:identifier[@eas:scheme='ISBN']"/>
@@ -688,98 +706,100 @@
         },
         "files": [
         <xsl:for-each select="//files/file">
-                <xsl:variable name="fn">
-                    <xsl:call-template name="file_name"><xsl:with-param name="text" select="@name"></xsl:with-param></xsl:call-template>
-                </xsl:variable>
-                <xsl:variable name="fnx">
-                    <xsl:call-template name="string-replace-all">
-                        <xsl:with-param name="text" select="$fn"></xsl:with-param>
-                        <xsl:with-param name="replace" select="';'"></xsl:with-param>
-                        <xsl:with-param name="by" select="'-'"></xsl:with-param>
-                    </xsl:call-template>
-                </xsl:variable>
-                <!-- File Name cannot contain any of the following characters:  / : * ? \" < > | ; # -->
-                <!-- For xslt: https://www.rapidtables.com/web/html/html-codes.html -->
-                <!-- For unicode: https://www.utf8-chartable.de/ -->
-                <!-- Replace # with  (U+0023) -->
-                <!-- Replace : with  (U+0023) -->
-                <!-- Replace ? with  (U+003F) -->
-                <xsl:variable name="fnxy" select="replace($fnx, '#', '(U+0023)')"/>
-                <xsl:variable name="fnxyz" select="replace($fnxy, '&#58;', '(U+003A)')"/>
-                <xsl:variable name="fnxyza" select="replace($fnxyz, '\&#63;', '(U+003F)')"/>
-                <!-- Directory name: Valid characters are a-Z, 0-9, '_', '-', '.', '\\', '/' and ' ' (white space) -->
-                <xsl:variable name="dn" select="@path"/>
-                <xsl:variable name="apos">'</xsl:variable>
-                <xsl:variable name="dnx">
-                    <xsl:call-template name="string-replace-all">
-                        <xsl:with-param name="text" select="$dn"></xsl:with-param>
-                        <!-- Replace ' with  _U-0027_ -->
-                        <xsl:with-param name="replace" select="$apos"></xsl:with-param>
-                        <xsl:with-param name="by" select="'_U-0027_'"></xsl:with-param>
-                    </xsl:call-template>
-                </xsl:variable>
-                <xsl:variable name="dnxy">
-                    <xsl:call-template name="string-replace-all">
-                        <xsl:with-param name="text" select="$dnx"></xsl:with-param>
-                        <!-- Replace , with  _U-002C_ -->
-                        <xsl:with-param name="replace" select="','"></xsl:with-param>
-                        <xsl:with-param name="by" select="'_U-002C_'"></xsl:with-param>
-                    </xsl:call-template>
-                </xsl:variable>
-                <xsl:variable name="dnxyz">
-                    <xsl:call-template name="string-replace-all">
-                        <xsl:with-param name="text" select="$dnxy"></xsl:with-param>
-                        <!-- Replace ( with  _U-0028_ -->
-                        <xsl:with-param name="replace" select="'('"></xsl:with-param>
-                        <xsl:with-param name="by" select="'_U-0028_'"></xsl:with-param>
-                    </xsl:call-template>
-                </xsl:variable>
-                <xsl:variable name="dnxyza">
-                    <xsl:call-template name="string-replace-all">
-                        <xsl:with-param name="text" select="$dnxyz"></xsl:with-param>
-                        <!-- Replace ) with  _U-0029_ -->
-                        <xsl:with-param name="replace" select="')'"></xsl:with-param>
-                        <xsl:with-param name="by" select="'_U-0029_'"></xsl:with-param>
-                    </xsl:call-template>
-                </xsl:variable>
-                <!-- Replace ; with  _U-003B_ -->
-                <xsl:variable name="dnxyzab" select="replace($dnxyza, '&amp;', '_U-003B_')"/>
-                <!-- Replace + with  _U-002B_ -->
-                <xsl:variable name="dnxyzabc" select="replace($dnxyzab, '\+', '_U-002B_')"/>
-                <!-- Replace : with  _U-003A_ -->
-                <xsl:variable name="dnxyzabcd"  select="replace($dnxyzabc, '&#58;', '_U-003A_')"/>
-                <!-- Replace ö with  _U-00D6_ -->
-                <xsl:variable name="dnxyzabcde" select="replace($dnxyzabcd, '&#246;','_U-00D6_')"/>
-                <xsl:variable name="sha1">
-                    <xsl:choose>
-                        <xsl:when test="sha1/. = '' or sha1/.='null'">
-                            <xsl:value-of select="$fnxyza"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="sha1/."/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:variable>
+            <xsl:variable name="fn">
+                <xsl:call-template name="file_name">
+                    <xsl:with-param name="text" select="@name"></xsl:with-param>
+                </xsl:call-template>
+            </xsl:variable>
+            <xsl:variable name="fnx">
+                <xsl:call-template name="string-replace-all">
+                    <xsl:with-param name="text" select="$fn"></xsl:with-param>
+                    <xsl:with-param name="replace" select="';'"></xsl:with-param>
+                    <xsl:with-param name="by" select="'-'"></xsl:with-param>
+                </xsl:call-template>
+            </xsl:variable>
+            <!-- File Name cannot contain any of the following characters:  / : * ? \" < > | ; # -->
+            <!-- For xslt: https://www.rapidtables.com/web/html/html-codes.html -->
+            <!-- For unicode: https://www.utf8-chartable.de/ -->
+            <!-- Replace # with  (U+0023) -->
+            <!-- Replace : with  (U+0023) -->
+            <!-- Replace ? with  (U+003F) -->
+            <xsl:variable name="fnxy" select="replace($fnx, '#', '(U+0023)')"/>
+            <xsl:variable name="fnxyz" select="replace($fnxy, '&#58;', '(U+003A)')"/>
+            <xsl:variable name="fnxyza" select="replace($fnxyz, '\&#63;', '(U+003F)')"/>
+            <!-- Directory name: Valid characters are a-Z, 0-9, '_', '-', '.', '\\', '/' and ' ' (white space) -->
+            <xsl:variable name="dn" select="@path"/>
+            <xsl:variable name="apos">'</xsl:variable>
+            <xsl:variable name="dnx">
+                <xsl:call-template name="string-replace-all">
+                    <xsl:with-param name="text" select="$dn"></xsl:with-param>
+                    <!-- Replace ' with  _U-0027_ -->
+                    <xsl:with-param name="replace" select="$apos"></xsl:with-param>
+                    <xsl:with-param name="by" select="'_U-0027_'"></xsl:with-param>
+                </xsl:call-template>
+            </xsl:variable>
+            <xsl:variable name="dnxy">
+                <xsl:call-template name="string-replace-all">
+                    <xsl:with-param name="text" select="$dnx"></xsl:with-param>
+                    <!-- Replace , with  _U-002C_ -->
+                    <xsl:with-param name="replace" select="','"></xsl:with-param>
+                    <xsl:with-param name="by" select="'_U-002C_'"></xsl:with-param>
+                </xsl:call-template>
+            </xsl:variable>
+            <xsl:variable name="dnxyz">
+                <xsl:call-template name="string-replace-all">
+                    <xsl:with-param name="text" select="$dnxy"></xsl:with-param>
+                    <!-- Replace ( with  _U-0028_ -->
+                    <xsl:with-param name="replace" select="'('"></xsl:with-param>
+                    <xsl:with-param name="by" select="'_U-0028_'"></xsl:with-param>
+                </xsl:call-template>
+            </xsl:variable>
+            <xsl:variable name="dnxyza">
+                <xsl:call-template name="string-replace-all">
+                    <xsl:with-param name="text" select="$dnxyz"></xsl:with-param>
+                    <!-- Replace ) with  _U-0029_ -->
+                    <xsl:with-param name="replace" select="')'"></xsl:with-param>
+                    <xsl:with-param name="by" select="'_U-0029_'"></xsl:with-param>
+                </xsl:call-template>
+            </xsl:variable>
+            <!-- Replace ; with  _U-003B_ -->
+            <xsl:variable name="dnxyzab" select="replace($dnxyza, '&amp;', '_U-003B_')"/>
+            <!-- Replace + with  _U-002B_ -->
+            <xsl:variable name="dnxyzabc" select="replace($dnxyzab, '\+', '_U-002B_')"/>
+            <!-- Replace : with  _U-003A_ -->
+            <xsl:variable name="dnxyzabcd" select="replace($dnxyzabc, '&#58;', '_U-003A_')"/>
+            <!-- Replace ö with  _U-00D6_ -->
+            <xsl:variable name="dnxyzabcde" select="replace($dnxyzabcd, '&#246;','_U-00D6_')"/>
+            <xsl:variable name="sha1">
+                <xsl:choose>
+                    <xsl:when test="sha1/. = '' or sha1/.='null'">
+                        <xsl:value-of select="$fnxyza"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="sha1/."/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
 
-                {
-                "label": "<xsl:value-of select="$fnxyza"/>",
-                "restricted": false,
-                "directoryLabel": "<xsl:value-of select="$dnxyzabcde"/>",
-                "version": 1,
-                "dataFile": {
-                "contentType": "<xsl:value-of select="mimeType/."/>",
-                "filesize": <xsl:value-of select="size/."/>,
-                "storageIdentifier": "<xsl:value-of select="@name"/>",
-                "rootDataFileId": -1,
-                "checksum": {
-                "type": "SHA-1",
-                "value": "<xsl:value-of select="$sha1"/>"
-                }
-                }
-                }
-                <xsl:if test="position() != last()">
-                    <xsl:text>,</xsl:text>
-                </xsl:if>
+            {
+            "label": "<xsl:value-of select="$fnxyza"/>",
+            "restricted": false,
+            "directoryLabel": "<xsl:value-of select="$dnxyzabcde"/>",
+            "version": 1,
+            "dataFile": {
+            "contentType": "<xsl:value-of select="mimeType/."/>",
+            "filesize": <xsl:value-of select="size/."/>,
+            "storageIdentifier": "<xsl:value-of select="@name"/>",
+            "rootDataFileId": -1,
+            "checksum": {
+            "type": "SHA-1",
+            "value": "<xsl:value-of select="$sha1"/>"
+            }
+            }
+            }
+            <xsl:if test="position() != last()">
+                <xsl:text>,</xsl:text>
+            </xsl:if>
 
         </xsl:for-each>
         ]
@@ -2746,27 +2766,27 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template name="string-replace-all">
-        <xsl:param name="text" />
-        <xsl:param name="replace" />
-        <xsl:param name="by" />
+        <xsl:param name="text"/>
+        <xsl:param name="replace"/>
+        <xsl:param name="by"/>
         <xsl:choose>
             <xsl:when test="contains($text, $replace)">
-                <xsl:value-of select="substring-before($text,$replace)" />
-                <xsl:value-of select="$by" />
+                <xsl:value-of select="substring-before($text,$replace)"/>
+                <xsl:value-of select="$by"/>
                 <xsl:call-template name="string-replace-all">
                     <xsl:with-param name="text"
-                                    select="substring-after($text,$replace)" />
-                    <xsl:with-param name="replace" select="$replace" />
-                    <xsl:with-param name="by" select="$by" />
+                                    select="substring-after($text,$replace)"/>
+                    <xsl:with-param name="replace" select="$replace"/>
+                    <xsl:with-param name="by" select="$by"/>
                 </xsl:call-template>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="$text" />
+                <xsl:value-of select="$text"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     <xsl:template name="string-escape-oraginzation">
-        <xsl:param name="text" />
+        <xsl:param name="text"/>
         <xsl:variable name="text-0">
             <xsl:value-of select="replace($text, '\\','\\\\')"/>
         </xsl:variable>
@@ -2779,7 +2799,7 @@
         <xsl:value-of select="$text-2"/>
     </xsl:template>
     <xsl:template name="string-escape-characters">
-        <xsl:param name="text" />
+        <xsl:param name="text"/>
         <xsl:variable name="text-0">
             <xsl:value-of select="replace($text, '\\','\\\\')"/>
         </xsl:variable>
@@ -2811,7 +2831,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template name ="display-name-default">
+    <xsl:template name="display-name-default">
         <xsl:param name="display-initials"/>
         <xsl:param name="display-prefix"/>
         <xsl:param name="display-surname"/>
@@ -2821,11 +2841,12 @@
                 <xsl:value-of select="$display-organization"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="$display-prefix"/>&#160;<xsl:value-of select="$display-surname"/>, <xsl:value-of select="$display-initials"/>
+                <xsl:value-of select="$display-prefix"/>&#160;<xsl:value-of select="$display-surname"/>,
+                <xsl:value-of select="$display-initials"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template name ="display-name-custom">
+    <xsl:template name="display-name-custom">
         <xsl:param name="display-title"/>
         <xsl:param name="display-initials"/>
         <xsl:param name="display-prefix"/>
@@ -2836,7 +2857,9 @@
                 <xsl:value-of select="$display-organization"/>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:value-of select="$display-prefix"/>&#160;<xsl:value-of select="$display-surname"/>, <xsl:value-of select="$display-initials"/> <xsl:value-of select="$display-title"/>
+                <xsl:value-of select="$display-prefix"/>&#160;<xsl:value-of select="$display-surname"/>,
+                <xsl:value-of select="$display-initials"/>
+                <xsl:value-of select="$display-title"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
