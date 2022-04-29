@@ -1,0 +1,481 @@
+<dataset>
+  <depositor>Reiziger</depositor>
+  <published>2014-09-08T14:16:14.130+02:00</published>
+  <collections>
+    <collection>easy-collection:1</collection>
+    <collection>easy-collection:2</collection>
+    <collection>easy-collection:3</collection>
+    <collection>easy-collection:6</collection>
+  </collections>
+  <emd:easymetadata emd:version="0.1" xmlns:emd="http://easy.dans.knaw.nl/easy/easymetadata/" xmlns:eas="http://easy.dans.knaw.nl/easy/easymetadata/eas/" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <emd:title>
+      <dc:title>Getuigen Verhalen, Reis van de Razzia, interview met Gijs Schenk</dc:title>
+    </emd:title>
+    <emd:creator>
+      <eas:creator>
+        <eas:title>MA</eas:title>
+        <eas:initials>E. J.</eas:initials>
+        <eas:prefix>de</eas:prefix>
+        <eas:surname>Jager</eas:surname>
+        <eas:organization>Stichting Reis van de Razzia</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:creator>
+    </emd:creator>
+    <emd:subject>
+      <dc:subject>Tweede Wereldoorlog</dc:subject>
+      <dc:subject>Oral History</dc:subject>
+      <dc:subject>Razzia</dc:subject>
+      <dc:subject>Dwangarbeid</dc:subject>
+      <dc:subject>Onderduiken</dc:subject>
+      <dc:subject>Deportatie</dc:subject>
+    </emd:subject>
+    <emd:description>
+      <dc:description>Op de avond van 9 november 1944 werd er een cordon rond Rotterdam en Schiedam gelegd door het Duitse leger. Alle belangrijke bruggen en strategische punten waren afgezet, trams reden niet meer en het telefoonverkeer was geblokkeerd. Op de twee daarop volgende dagen werden ruim 52.000 Rotterdammers en Schiedammers tussen de zeventien en veertig jaar oud opgepakt en afgevoerd richting Duitsland om daar dwangarbeid te verrichten in veelal beroerde omstandigheden. De Razzia van Rotterdam is een van de grootste klopjachten die het Duits Nationaalsocialistische regime heeft gehouden. Het verzetsblad Vrij Nederland reageerde dan ook geschokt, het schreef op 14 december 1944: ‘Vijftigduizend Nederlandse mannen laten zich als schapen wegvoeren en evenzoveel vrouwen zien toe hoe hun mannen en zoons weerloos naar Hitlers slachtbank worden geleid’. Het project Reis van de Razzia is gebaseerd op gefilmde getuigenissen van mannen die de razzia en de daaropvolgende reis hebben meegemaakt, om een hiaat in de geschiedschrijving te vullen en om inzicht te geven in de gebeurtenissen aan de hand van het thema &quot;Handelingsruimte van een individu in een samenleving onder druk&quot;. Gijs Schenk Gijs' vader vroeg aan een Duitse soldaat of zijn zoon wel mee moest met de razzia, want hij was tenslotte nog maar 17 jaar oud. De soldaat antwoordde dat zijn twee kinderen aan het Oostfront zaten, dat was toch veel erger. Via Kampen kwam Gijs per trein terecht in Bocholt en Handen, waar hij moest werken aan loopgraven. Bij een aanval door jachtbommenwerpers werden de paarden getroffen, Gijs heeft ze horen huilen in hun doodsstrijd. In Bocholt zag Gijs hoe twee Engelse jachtvliegtuigen werden neergeschoten. De stad werd echter zwaar gebombardeerd en de volgende morgen moest Gijs helpen mensen onder het puin vandaan te halen. Gijs heeft veel leed gezien tijdens zijn verblijf en gedurende zijn ontsnapping. Elke keer nog als er een vliegtuig overkomt, denkt Gijs aan bommen.</dc:description>
+    </emd:description>
+    <emd:publisher/>
+    <emd:contributor>
+      <eas:contributor>
+        <eas:organization>Funding Agency: Dr. Hendrik Muller's Vaderlandsch Fonds</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:organization>Funding Agency: Van Ommeren-de Voogt Stichting</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:organization>Funding Agency: Stichting Swart van Essen</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:organization>Funding Agency: van Capellen Stichting</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:title>Drs.</eas:title>
+        <eas:initials>T.</eas:initials>
+        <eas:surname>Broere</eas:surname>
+        <eas:organization>Transcriber for Stichting Reis van de Razzia</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:title>MA</eas:title>
+        <eas:initials>S.</eas:initials>
+        <eas:surname>Coppens</eas:surname>
+        <eas:organization>Researcher for Stichting Reis van de Razzia</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:title>Dr.</eas:title>
+        <eas:initials>A.</eas:initials>
+        <eas:surname>Oosthoek</eas:surname>
+        <eas:organization>Historical Advisor for Stichting Reis van de Razzia</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:initials>E.</eas:initials>
+        <eas:surname>Hafkamp</eas:surname>
+        <eas:organization>Production Consultant for Erik J de Jager Documentary Films</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:organization>Funding Agency: Stichting de Groot Fonds</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+      <eas:contributor>
+        <eas:organization>Funding Agency: Stichting Fonds Schiedam Vlaardingen e.o.</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+      </eas:contributor>
+    </emd:contributor>
+    <emd:date>
+      <eas:created eas:scheme="W3CDTF" eas:format="DAY">2012-12-01T00:00:00.000+01:00</eas:created>
+      <eas:available eas:scheme="W3CDTF" eas:format="DAY">2014-09-30T00:00:00.000+02:00</eas:available>
+      <eas:dateSubmitted eas:scheme="W3CDTF" eas:format="DAY">2014-06-27T11:21:57.392+02:00</eas:dateSubmitted>
+    </emd:date>
+    <emd:type>
+      <dc:type eas:schemeId="common.dc.type" eas:scheme="DCMI">Dataset</dc:type>
+    </emd:type>
+    <emd:format>
+      <dc:format>video/quicktime</dc:format>
+      <dc:format>MP4</dc:format>
+      <dc:format>MOV</dc:format>
+      <dc:format>DOCX</dc:format>
+      <dc:format>JPG</dc:format>
+      <dc:format>PDF</dc:format>
+    </emd:format>
+    <emd:identifier>
+      <dc:identifier eas:scheme="PID" eas:identification-system="http://www.persistent-identifier.nl">urn:nbn:nl:ui:13-tzu4-x6</dc:identifier>
+      <dc:identifier eas:scheme="DMO_ID">easy-dataset:57437</dc:identifier>
+      <dc:identifier eas:scheme="DOI" eas:identification-system="http://dx.doi.org">10.17026/dans-xnf-34mm</dc:identifier>
+    </emd:identifier>
+    <emd:source>
+      <dc:source>Originele bronnen 'De Razzia van Rotterdam', auteur: Ben Sijes, uitgever: Martinus Nijhoff, jaar 1951 (Rijksinstituut voor Oorlogsdocumentatie, RIOD)</dc:source>
+    </emd:source>
+    <emd:language>
+      <dc:language eas:schemeId="common.dc.language" eas:scheme="ISO 639">dut/nld</dc:language>
+    </emd:language>
+    <emd:relation>
+      <dc:relation eas:scheme="STREAMING_SURROGATE_RELATION">/domain/dans/user/De_Jager/collection/Reis_van_de_razzia/presentation/easy-dataset:57437</dc:relation>
+      <eas:relation>
+        <eas:subject-title>Website Stichting Reis van de Razzia</eas:subject-title>
+        <eas:subject-link>http://www.stichtingreisvanderazzia.nl</eas:subject-link>
+      </eas:relation>
+      <eas:relation eas:emphasis="true">
+        <eas:subject-title>Project ‘Reis van de Razzia’ in EASY</eas:subject-title>
+        <eas:subject-link>http://www.persistent-identifier.nl/?identifier=urn:nbn:nl:ui:13-ekzi-5g</eas:subject-link>
+      </eas:relation>
+    </emd:relation>
+    <emd:coverage>
+      <dct:spatial>Rotterdam</dct:spatial>
+      <dct:spatial>Nederland</dct:spatial>
+      <dct:spatial>Duitsland</dct:spatial>
+      <dct:spatial>Schiedam</dct:spatial>
+      <dct:spatial>Kampen</dct:spatial>
+      <dct:spatial>Bocholt</dct:spatial>
+      <dct:spatial>Handen</dct:spatial>
+      <dct:temporal>November 1944 - Juli 1945</dct:temporal>
+    </emd:coverage>
+    <emd:rights>
+      <dct:accessRights eas:schemeId="common.dcterms.accessrights">OPEN_ACCESS</dct:accessRights>
+      <dct:license>accept</dct:license>
+    </emd:rights>
+    <emd:audience>
+      <dct:audience eas:schemeId="custom.disciplines">easy-discipline:11</dct:audience>
+      <dct:audience eas:schemeId="custom.disciplines">easy-discipline:51</dct:audience>
+      <dct:audience eas:schemeId="custom.disciplines">easy-discipline:40</dct:audience>
+    </emd:audience>
+    <emd:other>
+      <eas:remark>Inhoud bestand _data: 2 briefkaarten Inhoud bestand _foto: briefwisseling geïnterviewde en moeder, foto’s met anderen. Tijdschema razzia.</eas:remark>
+      <eas:application-specific>
+        <eas:metadataformat>HISTORY</eas:metadataformat>
+        <eas:pakbon-status>NOT_IMPORTED</eas:pakbon-status>
+      </eas:application-specific>
+      <eas:etc/>
+    </emd:other>
+  </emd:easymetadata>
+  <files>
+    <totalSize>49054707123</totalSize>
+    <numberOfFiles>10</numberOfFiles>
+    <file path="original" name="GV_DeJager_ReisvandeRazzia_interview_Schenk.docx">
+      <fileExportLine>easy-dataset:57437,easy-file:4375543,20768668fec7c7ea999c445a5ee60bcf01b5ab08,original/GV_DeJager_ReisvandeRazzia_interview_Schenk.docx</fileExportLine>
+      <datasetId>easy-dataset:57437</datasetId>
+      <fedoraId>easy-file:4375543</fedoraId>
+      <completePath>original/GV_DeJager_ReisvandeRazzia_interview_Schenk.docx</completePath>
+      <sha1>20768668fec7c7ea999c445a5ee60bcf01b5ab08</sha1>
+      <size>134378</size>
+      <mimeType>application/vnd.openxmlformats-officedocument.wordprocessingml</mimeType>
+      <visibleTo>ANONYMOUS</visibleTo>
+      <accessibleTo>ANONYMOUS</accessibleTo>
+    </file>
+    <file path="original" name="GV_DeJager_ReisvandeRazzia_interview_Schenk.pdf">
+      <fileExportLine>easy-dataset:57437,easy-file:6233510,,original/GV_DeJager_ReisvandeRazzia_interview_Schenk.pdf</fileExportLine>
+      <datasetId>easy-dataset:57437</datasetId>
+      <fedoraId>easy-file:6233510</fedoraId>
+      <completePath>original/GV_DeJager_ReisvandeRazzia_interview_Schenk.pdf</completePath>
+      <sha1></sha1>
+      <size>141262</size>
+      <mimeType>application/pdf</mimeType>
+      <visibleTo>ANONYMOUS</visibleTo>
+      <accessibleTo>ANONYMOUS</accessibleTo>
+    </file>
+    <file path="original" name="GV_DeJager_ReisvandeRazzia_interview_Schenk_3.pdf">
+      <fileExportLine>easy-dataset:57437,easy-file:4422562,7adc71076b4df8b026095e02301be01c4a849920,original/GV_DeJager_ReisvandeRazzia_interview_Schenk_3.pdf</fileExportLine>
+      <datasetId>easy-dataset:57437</datasetId>
+      <fedoraId>easy-file:4422562</fedoraId>
+      <completePath>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_3.pdf</completePath>
+      <sha1>7adc71076b4df8b026095e02301be01c4a849920</sha1>
+      <size>120265</size>
+      <mimeType>application/pdf</mimeType>
+      <visibleTo>ANONYMOUS</visibleTo>
+      <accessibleTo>ANONYMOUS</accessibleTo>
+    </file>
+    <file path="original" name="GV_DeJager_ReisvandeRazzia_interview_Schenk_data.pdf">
+      <fileExportLine>easy-dataset:57437,easy-file:4422563,304eb7232c208b78032f492208d6beaeadcad164,original/GV_DeJager_ReisvandeRazzia_interview_Schenk_data.pdf</fileExportLine>
+      <datasetId>easy-dataset:57437</datasetId>
+      <fedoraId>easy-file:4422563</fedoraId>
+      <completePath>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_data.pdf</completePath>
+      <sha1>304eb7232c208b78032f492208d6beaeadcad164</sha1>
+      <size>1974700</size>
+      <mimeType>application/pdf</mimeType>
+      <visibleTo>ANONYMOUS</visibleTo>
+      <accessibleTo>ANONYMOUS</accessibleTo>
+    </file>
+    <file path="original" name="GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf">
+      <fileExportLine>easy-dataset:57437,easy-file:4422564,771ab24537f898caf208ceb5cba31bea6b87d9ca,original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</fileExportLine>
+      <datasetId>easy-dataset:57437</datasetId>
+      <fedoraId>easy-file:4422564</fedoraId>
+      <completePath>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</completePath>
+      <sha1>771ab24537f898caf208ceb5cba31bea6b87d9ca</sha1>
+      <size>27492653</size>
+      <mimeType>application/pdf</mimeType>
+      <visibleTo>ANONYMOUS</visibleTo>
+      <accessibleTo>ANONYMOUS</accessibleTo>
+    </file>
+  </files>
+  <downloads>
+    <total>22</total>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2014-07-24T14:34:25.251+02:00</startDate>
+      <year>2014</year>
+      <month>7</month>
+      <downloadCount>6</downloadCount>
+      <bytes-downloaded>57161947</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:4422564</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>27492653</file-size>
+          <user-id>emiliealsarchivaris</user-id>
+          <when>2014-07-24T14:34:25.222+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422562</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_3.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>120265</file-size>
+          <user-id>emiliealsarchivaris</user-id>
+          <when>2014-07-24T14:34:58.910+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422561</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_2.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>40838</file-size>
+          <user-id>emiliealsarchivaris</user-id>
+          <when>2014-07-24T14:35:20.206+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422561</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_2.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>40838</file-size>
+          <user-id>emiliealsarchivaris</user-id>
+          <when>2014-07-24T14:35:20.444+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422564</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>27492653</file-size>
+          <user-id>emiliealsarchivaris</user-id>
+          <when>2014-07-24T14:40:29.979+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422563</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_data.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>1974700</file-size>
+          <user-id>emiliealsarchivaris</user-id>
+          <when>2014-07-24T14:40:35.200+02:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2014-08-14T16:03:52.197+02:00</startDate>
+      <year>2014</year>
+      <month>8</month>
+      <downloadCount>3</downloadCount>
+      <bytes-downloaded>56960006</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:4422564</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>27492653</file-size>
+          <user-id>mariekearchivist</user-id>
+          <when>2014-08-14T16:03:52.177+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422563</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_data.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>1974700</file-size>
+          <user-id>mariekearchivist</user-id>
+          <when>2014-08-14T16:07:44.980+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422564</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>27492653</file-size>
+          <user-id>mariekearchivist</user-id>
+          <when>2014-08-21T15:14:35.678+02:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2014-09-01T16:08:24.332+02:00</startDate>
+      <year>2014</year>
+      <month>9</month>
+      <downloadCount>3</downloadCount>
+      <bytes-downloaded>29508191</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:4422561</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_2.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>40838</file-size>
+          <user-id>mariekearchivist</user-id>
+          <when>2014-09-01T16:08:24.256+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422563</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_data.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>1974700</file-size>
+          <user-id>mariekearchivist</user-id>
+          <when>2014-09-01T16:09:32.193+02:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422564</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>27492653</file-size>
+          <user-id>mariekearchivist</user-id>
+          <when>2014-09-01T16:09:47.488+02:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2014-10-28T12:56:42.874+01:00</startDate>
+      <year>2014</year>
+      <month>10</month>
+      <downloadCount>1</downloadCount>
+      <bytes-downloaded>134378</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:4375543</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk.docx</path>
+          <mimeType>application/vnd.openxmlformats-officedocument.wordprocessingml</mimeType>
+          <file-size>134378</file-size>
+          <user-id>annafanp</user-id>
+          <when>2014-10-28T12:56:42.846+01:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2014-11-18T20:04:01.637+01:00</startDate>
+      <year>2014</year>
+      <month>11</month>
+      <downloadCount>3</downloadCount>
+      <bytes-downloaded>2215230</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:4422562</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_3.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>120265</file-size>
+          <user-id>Janni</user-id>
+          <when>2014-11-18T20:04:01.584+01:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422563</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_data.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>1974700</file-size>
+          <user-id>Janni</user-id>
+          <when>2014-11-18T20:05:47.048+01:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422562</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_3.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>120265</file-size>
+          <user-id>Janni</user-id>
+          <when>2014-11-18T20:06:03.208+01:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2015-03-05T11:43:38.790+01:00</startDate>
+      <year>2015</year>
+      <month>3</month>
+      <downloadCount>4</downloadCount>
+      <bytes-downloaded>29721996</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:4422562</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_3.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>120265</file-size>
+          <user-id>knightharry</user-id>
+          <when>2015-03-05T11:43:38.766+01:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4375543</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk.docx</path>
+          <mimeType>application/vnd.openxmlformats-officedocument.wordprocessingml</mimeType>
+          <file-size>134378</file-size>
+          <user-id>knightharry</user-id>
+          <when>2015-03-17T15:18:00.719+01:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422563</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_data.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>1974700</file-size>
+          <user-id>knightharry</user-id>
+          <when>2015-03-17T15:18:02.727+01:00</when>
+        </download>
+        <download>
+          <fileItemId>easy-file:4422564</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>27492653</file-size>
+          <user-id>knightharry</user-id>
+          <when>2015-03-17T15:18:04.262+01:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2018-12-17T11:58:52.207+01:00</startDate>
+      <year>2018</year>
+      <month>12</month>
+      <downloadCount>1</downloadCount>
+      <bytes-downloaded>27492653</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:4422564</fileItemId>
+          <path>original/GV_DeJager_ReisvandeRazzia_interview_Schenk_foto.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>27492653</file-size>
+          <user-id>EmilyMiddendorp</user-id>
+          <when>2018-12-17T11:58:52.194+01:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2018-12-17T11:58:21.719+01:00</startDate>
+      <year>2018</year>
+      <month>12</month>
+      <downloadCount>1</downloadCount>
+      <bytes-downloaded>288389</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:4334108</fileItemId>
+          <path>original/GV_DeJager_Reis vandeRazzia_interview_Schenk_1.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>288389</file-size>
+          <user-id>EmilyMiddendorp</user-id>
+          <when>2018-12-17T11:58:21.522+01:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+  </downloads>
+</dataset>

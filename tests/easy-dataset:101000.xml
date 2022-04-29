@@ -1,0 +1,114 @@
+<dataset>
+  <depositor>jitskeblom</depositor>
+  <published>2018-06-04T15:58:02.020+02:00</published>
+  <collections>
+    <collection>easy-collection:4</collection>
+  </collections>
+  <emd:easymetadata emd:version="0.1" xmlns:emd="http://easy.dans.knaw.nl/easy/easymetadata/" xmlns:eas="http://easy.dans.knaw.nl/easy/easymetadata/eas/" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <emd:title>
+      <dc:title>Archeologisch onderzoek Achterstraat te Montfoort Bureauonderzoek</dc:title>
+    </emd:title>
+    <emd:creator>
+      <eas:creator>
+        <eas:initials>H.</eas:initials>
+        <eas:surname>Boon</eas:surname>
+        <eas:organization>Sweco</eas:organization>
+        <eas:entityId eas:scheme="DAI"/>
+        <eas:role eas:scheme="DATACITE"/>
+      </eas:creator>
+    </emd:creator>
+    <emd:subject/>
+    <emd:description>
+      <dc:description>Op basis van de resultaten van het bureauonderzoek is de kans op het aantreffen van archeologische indicatoren groot. Het plangebied ligt in de historische kern van de ommuurde stad Montfoort. Het ligt in de directe periferie van het kasteel, op een locatie waar vanaf de Late Middeleeuwen bewoning heeft plaatsgevonden. Mogelijk heeft het plangebied altijd uit tuin bestaan, maar op basis van historische kaarten, met name de kaarten van Van Deventer en Bleau uit de 16e en 17e eeuw, kan niet worden uitgesloten dat aan de oostkant van het plangebied een gebouw heeft gestaan. Verder kunnen in het plangebied resten van afvalkuilen en water- en beerputten worden aangetroffen. De ingrepen binnen het plangebied zullen “archeologievriendelijk” plaatsvinden. De ontgraving zal niet dieper reiken dan 0,5 m –mv. Derhalve is de kans op het verstoren van archeologische resten tijdens de bouw gering. Vermoedelijk blijven de ingrepen voor een groot deel in een recentelijk opgehoogd en geroerd pakket. Desalniettemin kunnen bijvoorbeeld funderingsresten uit de Late Middeleeuwen of Nieuwe Tijd tijdens de ontgraving zeker wel worden aangetroffen.</dc:description>
+    </emd:description>
+    <emd:publisher/>
+    <emd:contributor/>
+    <emd:date>
+      <eas:created eas:scheme="W3CDTF" eas:format="DAY">2016-05-13T00:00:00.000+02:00</eas:created>
+      <eas:available eas:scheme="W3CDTF" eas:format="DAY">2019-05-30T00:00:00.000+02:00</eas:available>
+    </emd:date>
+    <emd:type>
+      <dc:type eas:schemeId="common.dc.type" eas:scheme="DCMI">Text</dc:type>
+    </emd:type>
+    <emd:format>
+      <dc:format eas:schemeId="common.dc.format" eas:scheme="IMT">application/pdf</dc:format>
+    </emd:format>
+    <emd:identifier>
+      <dc:identifier eas:scheme="PID" eas:identification-system="http://www.persistent-identifier.nl">urn:nbn:nl:ui:13-lx-qtmv</dc:identifier>
+      <dc:identifier eas:scheme="DOI" eas:identification-system="https://doi.org">10.17026/dans-zmy-mrfw</dc:identifier>
+      <dc:identifier eas:scheme="ISSN">2468-4813</dc:identifier>
+      <dc:identifier>333338 (Referentienummer)</dc:identifier>
+      <dc:identifier eas:scheme="eDNA-project">a34516</dc:identifier>
+      <dc:identifier eas:scheme="DMO_ID">easy-dataset:101000</dc:identifier>
+    </emd:identifier>
+    <emd:source/>
+    <emd:language>
+      <dc:language eas:schemeId="common.dc.language" eas:scheme="ISO 639">dut/nld</dc:language>
+    </emd:language>
+    <emd:relation/>
+    <emd:coverage>
+      <dct:spatial>Achterstraat</dct:spatial>
+      <dct:spatial>Montfoort</dct:spatial>
+      <dct:spatial>Gemeente Montfoort</dct:spatial>
+      <dct:spatial>Utrecht</dct:spatial>
+      <eas:spatial>
+        <eas:point eas:scheme="RD">
+          <eas:x>125129</eas:x>
+          <eas:y>450798</eas:y>
+        </eas:point>
+      </eas:spatial>
+    </emd:coverage>
+    <emd:rights>
+      <dct:accessRights eas:schemeId="common.dcterms.accessrights">OPEN_ACCESS_FOR_REGISTERED_USERS</dct:accessRights>
+      <dct:license>accept</dct:license>
+      <dct:rightsHolder>Sweco</dct:rightsHolder>
+    </emd:rights>
+    <emd:audience>
+      <dct:audience eas:schemeId="custom.disciplines">easy-discipline:2</dct:audience>
+    </emd:audience>
+    <emd:other>
+      <eas:application-specific>
+        <eas:metadataformat>ANY_DISCIPLINE</eas:metadataformat>
+        <eas:pakbon-status>NOT_IMPORTED</eas:pakbon-status>
+      </eas:application-specific>
+      <eas:etc/>
+    </emd:other>
+  </emd:easymetadata>
+  <files>
+    <totalSize>4029073</totalSize>
+    <numberOfFiles>1</numberOfFiles>
+    <file path="original" name="SWAR 2015 Achterstraat Montdfoort.pdf">
+      <fileExportLine>easy-dataset:101000,easy-file:6808644,a5955d82a0d88e9f5d2ef772092c9a00ea02d983,original/SWAR 2015 Achterstraat Montdfoort.pdf</fileExportLine>
+      <datasetId>easy-dataset:101000</datasetId>
+      <fedoraId>easy-file:6808644</fedoraId>
+      <completePath>original/SWAR 2015 Achterstraat Montdfoort.pdf</completePath>
+      <sha1>a5955d82a0d88e9f5d2ef772092c9a00ea02d983</sha1>
+      <size>4029073</size>
+      <mimeType>application/pdf</mimeType>
+      <visibleTo>ANONYMOUS</visibleTo>
+      <accessibleTo>KNOWN</accessibleTo>
+    </file>
+  </files>
+  <downloads>
+    <total>1</total>
+    <dlhl:download-list xmlns:dlhl="http://easy.dans.knaw.nl/easy/download-list/">
+      <level>DATASET</level>
+      <listType>2</listType>
+      <startDate>2018-06-04T15:47:59.449+02:00</startDate>
+      <year>2018</year>
+      <month>6</month>
+      <downloadCount>1</downloadCount>
+      <bytes-downloaded>4029073</bytes-downloaded>
+      <downloads>
+        <download>
+          <fileItemId>easy-file:6808644</fileItemId>
+          <path>original/SWAR 2015 Achterstraat Montdfoort.pdf</path>
+          <mimeType>application/pdf</mimeType>
+          <file-size>4029073</file-size>
+          <user-id>SandroTates</user-id>
+          <when>2018-06-04T15:47:59.403+02:00</when>
+        </download>
+      </downloads>
+    </dlhl:download-list>
+  </downloads>
+</dataset>
